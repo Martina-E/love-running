@@ -80,8 +80,17 @@ main{
     /*doesn't take up any extra space*/
 }
 
-footer{
-    background-color: forestgreen;
+#socials{
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#socials i {
+   font-size: 160%;
+   padding: 5%;
+   color: #3a3a3a; 
 }
 /*media query: tablets and larget (768px+)*/
 @media screen and (min-width: 768px) {
