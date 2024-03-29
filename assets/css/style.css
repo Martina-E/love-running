@@ -74,12 +74,17 @@ nav{
 }
 /*Main content*/
 main{
-    background-color: lightblue;
     flex: 1 0 auto;
     margin-top: 47px;
     /*doesn't take up any extra space*/
 }
-
+/*hero*/
+#hero{
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+/*footer*/
 #socials{
     text-align: center;
     padding: 20px 0;
