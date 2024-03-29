@@ -23,6 +23,9 @@ header{
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a{
@@ -35,9 +38,45 @@ h1{
     letter-spacing: 2px;
     color: #252525;
 }
+
+#menu{
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+#menu>li{
+    margin-bottom: 1em;
+}
+
+.active{
+    border-bottom: 1px solid;
+}
+/*Nav bar styling*/
+nav{
+   position: absolute; 
+   background-color: #ffffff;
+   width: 100%;
+   left: 0;
+   padding: 0 1rem;
+   box-shadow: 0 2px 2px #3a3a3a;
+   display: none;
+   top: 100%;
+}
+
+#nav-toggle:checked~nav{
+    display: block;
+}
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    font-size: 2rem;
+}
+/*Main content*/
 main{
     background-color: lightblue;
     flex: 1 0 auto;
+    margin-top: 47px;
     /*doesn't take up any extra space*/
 }
 
